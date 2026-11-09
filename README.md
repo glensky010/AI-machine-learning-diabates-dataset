@@ -26,9 +26,15 @@ A Machine Learning powered application that predicts an individual's risk of dia
 ---
 ## **Installation & Usage:**
 1. **Clone the repository:**
-   ```git clone https.://github.com/glensky010/AI-machine-learning-diabetes-dataset
-   cd AI-machine-learning-diabetes-dataset```
+   ```bash
+   git clone https.://github.com/glensky010/AI-machine-learning-diabetes-dataset
+   cd AI-machine-learning-diabetes-dataset
+   ```
 2. **Install every library required:**
-   ```pip install -r requirements.txt```
+   ```bash
+   pip install -r requirements.txt
+   ```
 4. **Run the app:**
-   ```streamlit run app.py```
+   ```bash
+   streamlit run app.py
+   ``
