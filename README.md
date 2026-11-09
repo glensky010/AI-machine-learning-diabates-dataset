@@ -28,6 +28,8 @@ A Machine Learning powered application that predicts an individual's risk of dia
    cd AI-machine-learning-diabetes-dataset
    ```
 2. **Install every library required:**
-   ```pip install -r requirements.txt```
-3. **Run the app:**
-   ```streamlit run app.py```
+   ```pip install -r requirements.txt
+   ```
+4. **Run the app:**
+   ```streamlit run app.py
+   ```
