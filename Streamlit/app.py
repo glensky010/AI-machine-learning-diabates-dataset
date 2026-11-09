@@ -218,9 +218,28 @@ st.markdown(
 # -------------------------------------------------------------------
 @st.cache_resource
 def load_model():
-    model = joblib.load("diabetes_model.joblib")
-    with open("metrics.json", "r", encoding="utf-8") as file:
+    project_dir = Path(__file__).resolve().parent
+
+    model_path = project_dir / "Streamlit/diabetes_model.joblib"
+    metrics_path = project_dir / "Streamlit/metrics.json"
+
+    # Check model file
+    if not model_path.exists():
+        raise FileNotFoundError(
+            f"Model tidak ditemukan di: {model_path}"
+        )
+
+    # Check metadata file
+    if not metrics_path.exists():
+        raise FileNotFoundError(
+            f"Metrics tidak ditemukan di: {metrics_path}"
+        )
+
+    model = joblib.load(model_path)
+
+    with open(metrics_path, "r", encoding="utf-8") as file:
         metadata = json.load(file)
+
     return model, metadata
 
 
