@@ -10,17 +10,26 @@ A Machine Learning powered application that predicts an individual's risk of dia
 * -Confidence / Probability Score: Displays the percentage likelihood alongside the classification.
 ---
 ## **📈Input Parameters📉:**
-**Personal Information:** Age, Gender, Country
-**Body Measurements:** Height (cm), Weight (kg), BMI, Waist Circumference (cm)
-**Blood Glucose Indicators:** Blood Glucose, HbA1c, Fasting Blood Sugar, Insulin Level, Sugar Intake Level
-**Blood Pressure & Vital Signs:** Systolic Blood Pressure, Diastolic Blood Pressure, Heart Rate
-**Cholesterol & Lipid Profile:** Total Cholesterol, HDL, LDL, Triglycerides
-**Lifestyle & Medical History:** Physical Activity Level, Exercise Hours/Week, Daily Walking Minutes, Diet Quality, Sleep Hours, Stress Level, Smoking Status, Alcohol Consumption, Family History of Diabetes, Hypertension, Heart Disease, Fatty Liver, PCOS, Medication Adherence, Work Type, Residence Type, Daily Water Intake (L)
+* **Personal Information:** Age, Gender, Country
+* **Body Measurements:** Height (cm), Weight (kg), BMI, Waist Circumference (cm)
+* **Blood Glucose Indicators:** Blood Glucose, HbA1c, Fasting Blood Sugar, Insulin Level, Sugar Intake Level
+* **Blood Pressure & Vital Signs:** Systolic Blood Pressure, Diastolic Blood Pressure, Heart Rate
+* **Cholesterol & Lipid Profile:** Total Cholesterol, HDL, LDL, Triglycerides
+* **Lifestyle & Medical History:** Physical Activity Level, Exercise Hours/Week, Daily Walking Minutes, Diet Quality, Sleep Hours, Stress Level, Smoking Status, Alcohol Consumption, Family History of Diabetes, Hypertension, Heart Disease, Fatty Liver, PCOS, Medication Adherence, Work Type, Residence Type, Daily Water Intake (L)
 ---
 ## **Model & Dataset:**
--Dataset: https://www.kaggle.com/code/hosseinbadrnezhad/diabetes-risk-prediction-dataset-50k-patients-etl
--Algorithm: Random Forest 
--Training Notebook: diabetes_risk_prediction_dataset_50k_patients_ETL,.ipynb
+* -Dataset: https://www.kaggle.com/code/hosseinbadrnezhad/diabetes-risk-prediction-dataset-50k-patients-etl
+* -Algorithm: Random Forest 
+* -Training Notebook: diabetes_risk_prediction_dataset_50k_patients_ETL,.ipynb
 ---
 ## **Installation & Usage:**
--Pip install -r requirements.txt
+1. **Clone the repository:**
+   ```git clone https.://github.com
+   cd AI-machine-learning-diabetes-dataset
+   ```
+2. **Install every library required:**
+   ```pip install -r requirements.txt
+   ```
+3. **Run the app:**
+   ```streamlit run app.py
+   ```
