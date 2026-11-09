@@ -5,9 +5,9 @@ A Machine Learning powered application that predicts an individual's risk of dia
 ## (SCREENSHOT)
 ---
 ## **📊Features📊:**
--Manual Health Input Form: Clean interface to enter a patient's biomarkers and health history.
--Real-time AI Risk Assessment: Processes user data through a trained model to predict diabetes likelihood.
--Confidence / Probability Score: Displays the percentage likelihood alongside the classification.
+* -Manual Health Input Form: Clean interface to enter a patient's biomarkers and health history.
+* -Real-time AI Risk Assessment: Processes user data through a trained model to predict diabetes likelihood.
+* -Confidence / Probability Score: Displays the percentage likelihood alongside the classification.
 ---
 ## **📈Input Parameters📉:**
 **Personal Information:** Age, Gender, Country
