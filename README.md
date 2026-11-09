@@ -37,4 +37,4 @@ A Machine Learning powered application that predicts an individual's risk of dia
 4. **Run the app:**
    ```bash
    streamlit run app.py
-   ``
+   ```
