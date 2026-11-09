@@ -5,14 +5,12 @@ import joblib
 import json
 from pathlib import Path
 
-# PAGE CONFIG
 st.set_page_config(
     page_title="AI Health Insight",
     page_icon="🩺",
     layout="wide"
 )
 
-# LOAD MODEL
 @st.cache_resource
 def load_model():
     model = joblib.load("diabetes_model.joblib")
@@ -22,7 +20,6 @@ def load_model():
 
 model, metadata = load_model()
 
-# SIDEBAR
 st.sidebar.title("🩺 AI Health Insight")
 page = st.sidebar.radio(
     "Navigation",
@@ -37,7 +34,6 @@ page = st.sidebar.radio(
 
 st.sidebar.caption("Diabetes Risk Classification")
 
-# DASHBOARD
 if page == "Dashboard":
 
     st.title("Health Insight Dashboard")
@@ -67,7 +63,6 @@ if page == "Dashboard":
     results = pd.DataFrame(metrics).T
     st.dataframe(results, use_container_width=True)
 
-# DATASET EXPLORER
 elif page == "Dataset Explorer":
 
     st.title("Dataset Explorer")
@@ -93,7 +88,6 @@ elif page == "Dataset Explorer":
             data.isnull().sum().to_frame("Missing Values")
         )
 
-# AI PREDICTION
 elif page == "AI Prediction":
 
     st.title("AI Diabetes Risk Prediction")
@@ -166,7 +160,6 @@ elif page == "AI Prediction":
             "Educational prediction only. Not a medical diagnosis."
         )
 
-# MODEL EVALUATION
 elif page == "Model Evaluation":
 
     st.title("Model Evaluation")
@@ -189,7 +182,6 @@ elif page == "Model Evaluation":
     if cm_path.exists():
         st.image(str(cm_path))
 
-# ABOUT PROJECT
 elif page == "About Project":
 
     st.title("About AI Health Insight")
