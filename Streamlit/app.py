@@ -220,8 +220,8 @@ st.markdown(
 def load_model():
     project_dir = Path(__file__).resolve().parent
 
-    model_path = project_dir / "Streamlit/diabetes_model.joblib"
-    metrics_path = project_dir / "Streamlit/metrics.json"
+    model_path = project_dir / "diabetes_model.joblib"
+    metrics_path = project_dir / "metrics.json"
 
     # Check model file
     if not model_path.exists():
