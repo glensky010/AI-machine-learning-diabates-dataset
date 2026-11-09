@@ -2,7 +2,8 @@
 A Machine Learning powered application that predicts an individual's risk of diabetes based on manually entered health metrics and patients data.
 **⚠️Disclaimer⚠️** This application is for educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 
-## (SCREENSHOT)
+## ![Uploading image.png…]()
+
 ---
 ## **📊Features📊:**
 * -Manual Health Input Form: Clean interface to enter a patient's biomarkers and health history.
